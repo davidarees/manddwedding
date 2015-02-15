@@ -1,5 +1,8 @@
 MandDWedding::Application.routes.draw do
   devise_for :users
+  devise_scope :user do
+   root :to => 'devise/sessions#new'
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -50,7 +53,7 @@ MandDWedding::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'users#sign_in'
+  #root :to => 'users#sign_in'
 
   # See how all your routes lay out with "rake routes"
 

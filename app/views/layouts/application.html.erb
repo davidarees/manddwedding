@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="user-nav">
+    <% if user_signed_in? %>
+      <b>
+        <%= current_user.username %>
+      </b>
+      <%= link_to 'Logout',  destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to 'Login', new_user_session_path %>
+    <% end %>
+  </div>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+  
   <%= yield %>
 
 </body>
