@@ -8,6 +8,8 @@ gem 'rails', '3.2.19'
 gem 'pg'
 gem 'devise'
 gem 'high_voltage'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
