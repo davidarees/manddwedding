@@ -10,8 +10,79 @@ p {
   color: black;
 }
 
+input {
+  margin: 0.5em;
+}
+
+label { 
+  display: inline-block; 
+  width: 10em; 
+  text-align: left; 
+}
+
 #map-canvas {
   width: 500px;
   height: 400px;
   background-color: #CCC;
+  margin: 10px, 10px, 10px, 30px;
+  padding: 10px, 10px, 10px, 30px;
+}
+
+.loginContainer {
+  width: 80%;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  background-color: rgb(120,0,0);
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  color: white;
+}
+.loginText {
+  font-size: 40px; 
+}
+
+button {
+  width: 100%;
+  background-color:  white;
+  color: rgb(120,0,0);
+  text-decoration: none;
+  border: 0;
+  padding: .5em 1em;
+  border-radius: 2px;
+  margin: .5em;
+}
+.form-horizontal .form-group{
+  margin-right: 0px;
+}
+
+.loginText {
+  font-size: 3em; 
+  position: relative;
+  font-family: copperplate;
+  font-weight: 100;
+}
+
+.ampersand{
+  font-family: serif;
+  font-size: 25em;
+  color: rgb(80,0,0);
+  z-index: 1;
+  margin: -.6em 0 0 0.3em;
+}
+
+.nameMartha {
+  margin: 1.8em 0 0 0em;
+  z-index: 10;
+}
+
+.nameDavid {
+  z-index: 10;
+  margin: -7.5em 0 0 6em;
+}
+
+@media (max-width: 768px) { 
+  font-size: 0.7em;
 }

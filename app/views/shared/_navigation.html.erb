@@ -1,9 +1,4 @@
 <% if user_signed_in? %>
-  <b>
-    <%= current_user.username %>
-  </b>
-  <%= link_to 'Logout',  destroy_user_session_path, method: :delete %>
-<% end %>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -24,8 +19,14 @@
         <li><a href="/pages/venues">Venues</a></li>
         <li><a href="/pages/hotels">Hotels</a></li>
         <li><a href="/pages/taxis">Taxis</a></li>
-        <li><a href="/pages/gifts">Gifts</a></li>       
+        <li><a href="/pages/gifts">Gifts</a></li>
+        <% if user_signed_in? %>
+          <li>
+            <%= link_to 'Logout',  destroy_user_session_path, method: :delete %>
+          </li>
+        <% end %>    
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<% end %>    
