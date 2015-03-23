@@ -20,6 +20,7 @@
         <li class="<%='active' if current_page?(page_path('hotels'))%>"><%= link_to "Hotels", page_path('hotels') %>
         <li class="<%='active' if current_page?(page_path('taxis'))%>"><%= link_to "Taxis", page_path('taxis') %>
         <li class="<%='active' if current_page?(page_path('gifts'))%>"><%= link_to "Gifts", page_path('gifts') %>
+        <li class="<%='active' if current_page?(page_path('things_to_do'))%>"><%= link_to "Things to do", page_path('things_to_do') %>
         <% if user_signed_in? %>
           <li>
             <%= link_to 'Logout',  destroy_user_session_path, method: :delete %>
